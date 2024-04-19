@@ -1,0 +1,16 @@
+<h1>Assignment Show</h1>
+
+<strong> Assignment: </strong>
+<%= @task.assignment %>
+<br>
+<% if current_user.admin? %>
+<strong> Email: </strong>
+<%= @task.email %>
+<%end%>
+<% if current_user.admin? %>
+<strong> User: </strong>
+<p> admin </p>
+<% end %>
+
+
+

@@ -1,0 +1,3 @@
+render turbo_stream: turbo_stream.append(:tasks, @task)  # Assuming you have a Turbo Stream named 'tasks'
+      else
+        render turbo_stream: turbo_stream.replace(:errors, partial: "shared/errors", locals: { task: @task })

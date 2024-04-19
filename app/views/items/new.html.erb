@@ -1,0 +1,15 @@
+<h1>comment</h1>
+
+<div class="row justify-content-center">
+  <%= form_with model: @item  do |form|%>
+    <%= f.hidden_field :task_id, value:   @task.id %>
+     <div class="form-group">
+      <%=form.label :Comment%><br>
+      <%= form.text_area :comment, placeholder: 'Add Comment'%>
+    </div>
+    <br>
+    <div class="form-group">
+          <%= form.submit "Create Comment",  class: 'btn btn-primary'%>
+        </div>
+  <%end%>
+</div>

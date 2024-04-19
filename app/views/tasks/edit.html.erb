@@ -1,0 +1,14 @@
+<h1>Edit Assignment</h1>
+
+<div class="row justify-content-center">
+  <%= form_with model: @task  do |form|%>
+    <div class="form-group">
+      <%=form.label :Assignment%><br>
+      <%= form.text_field :assignment, placeholder: 'Add Assignment'%>
+    </div>
+    <br>
+    <div class="form-group">
+          <%= form.submit "Edit Assignment",  class: 'btn btn-primary'%>
+        </div>
+  <%end%>
+</div>
